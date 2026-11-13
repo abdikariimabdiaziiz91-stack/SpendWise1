@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWise - Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>SpendWise</h1>
+        <p>Track Your Money, Manage Your Future</p>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <h2>Welcome to SpendWise</h2>
+            <p>Manage your budget and track your spending easily.</p>
+        </section>
+
+        <section class="summary">
+            <div class="card">
+                <h3>Total Budget</h3>
+                <p id="budget">KES 0</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Expenses</h3>
+                <p id="expenses">KES 0</p>
+            </div>
+
+            <div class="card balance-card">
+                <h3>Remaining Balance</h3>
+                <p id="balance">KES 0</p>
+            </div>
+        </section>
+
+        <section class="input-section">
+            <h2>Set Your Budget</h2>
+
+            <form id="budgetForm">
+                <input
+                    type="number"
+                    id="budgetInput"
+                    placeholder="Enter your budget (KES)"
+                    min="1"
+                    required
+                >
+                <button type="submit">Set Budget</button>
+            </form>
+        </section>
+
+        <section class="input-section">
+            <h2>Add an Expense</h2>
+
+            <form id="expenseForm">
+                <input
+                    type="text"
+                    id="expenseName"
+                    placeholder="Expense name"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="expenseAmount"
+                    placeholder="Expense amount (KES)"
+                    min="1"
+                    required
+                >
+
+                <button type="submit">Add Expense</button>
+            </form>
+        </section>
+
+        <section class="expense-section">
+            <h2>Your Expenses</h2>
+            <ul id="expenseList"></ul>
+        </section>
+
+        <p id="message">Welcome to SpendWise!</p>
+
+    </main>
+
+    <footer>
+        <p>SpendWise | Power Learn Project</p>
+    </footer>
+
+</body>
+</html>
